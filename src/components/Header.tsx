@@ -41,8 +41,9 @@ const Header = () => {
           <div className="hidden xl:block">
             <Socials />
           </div>
-
-          <MobileNav />
+          <div className="xl:hidden">
+            <MobileNav />
+          </div>
         </div>
       </div>
     </header>
