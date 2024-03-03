@@ -1,5 +1,5 @@
 const Socials = () => {
-  return <div>Socials</div>;
+  return <section>Socials</section>;
 };
 
 export default Socials;
