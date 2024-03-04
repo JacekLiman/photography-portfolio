@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <section className="section pt-[100px] lg:pt-0">
+    <section className="section pt-[100px] lg:pt-0 animate-pageAnimation opacity-0">
       <div className="container mx-auto h-full ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 h-full">
           <div className="flex flex-col text-center lg:text-left justify-center">

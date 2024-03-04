@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className="section">
+    <section className="section opacity-0 animate-pageAnimation">
       <div className="container mx-auto h-full">
         <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="text-center lg:text-left">
@@ -17,7 +17,7 @@ const Home = () => {
               hire me
             </Link>
           </div>
-          <div >
+          <div>
             <div className="h-full">
               <img className="h-full object-cover" src={WomanImg} alt="" />
             </div>

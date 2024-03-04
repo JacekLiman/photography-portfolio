@@ -16,6 +16,15 @@ export default {
       padding: "1rem",
     },
     extend: {
+      animation: {
+        pageAnimation: "pageAnimation 1.5s 0.3s ease-in forwards ",
+      },
+      keyframes: {
+        pageAnimation: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
       colors: {
         primary: "#0E1112",
         grey: "#484B4B",
