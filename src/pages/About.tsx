@@ -6,7 +6,7 @@ const About = () => {
     <section className="section pt-[100px] lg:pt-0">
       <div className="container mx-auto h-full">
         <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div className="flex flex-col text-center lg:text-left justify-center">
+        <div className="flex flex-col text-center lg:text-left justify-center lg:order-2">
             <h1 className="h1 pb-12">About Me</h1>
             <p className="text-[18px] lg:text-[22px]  ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
