@@ -18,7 +18,8 @@ const MobileNav = () => {
       <div
         className={`${
           isNavOpen ? "translate-x-0" : "translate-x-full"
-        }  flex items-center justify-center absolute top-0 right-0 bg-white shadow-2xl z-50 w-[calc(100vw*0.8)] h-screen max-w-[500px] transition duration-500`}
+        }  flex items-center justify-center absolute top-0 right-0 bg-white shadow-2xl z-50 
+        w-[calc(100vw*0.8)] h-screen max-w-[500px] transition duration-500`}
       >
         <button
           onClick={() => setIsNavOpen(false)}
