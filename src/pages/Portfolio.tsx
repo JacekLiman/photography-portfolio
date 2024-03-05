@@ -5,12 +5,20 @@ import Img4 from "../assets/img/portfolio/4.png";
 
 import { Link } from "react-router-dom";
 
+import { useContext } from "react";
+import { CursorContext } from "../components/context/CursorContext";
+
 const Portfolio = () => {
+  const { handleMouseEnter, handleMouseLeave } = useContext(CursorContext);
   return (
-    <section className="section pt-[100px] lg:pt-0 animate-pageAnimation opacity-0">
+    <section className="section pt-[100px] lg:pt-[140px] animate-pageAnimation opacity-0">
       <div className="container mx-auto h-full ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 h-full">
-          <div className="flex flex-col text-center lg:text-left justify-center">
+          <div
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className="flex flex-col text-center lg:text-left justify-center"
+          >
             <h1 className="h1 pb-12">Portfolio</h1>
             <p className="text-[18px] lg:text-[22px]  ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -28,9 +36,11 @@ const Portfolio = () => {
             </Link>
           </div>
           <div className="flex items-center justify-center">
-            <div className="grid grid-cols-2 gap-1">
+            <div onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave} className="grid grid-cols-2 gap-1">
               <div className="overflow-hidden">
                 <img
+                  
                   className="h-full hover:scale-105 transition-all duration-400 cursor-pointer"
                   src={Img1}
                   alt=""

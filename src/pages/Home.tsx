@@ -1,26 +1,42 @@
 import WomanImg from "../assets/img/home/woman.png";
 import { Link } from "react-router-dom";
 
+import { useContext } from "react";
+import { CursorContext } from "../components/context/CursorContext";
+
 const Home = () => {
+  const { handleMouseEnter, handleMouseLeave } = useContext(CursorContext);
   return (
-    <section className="section opacity-0 animate-pageAnimation">
+    <section className="section pt-[100px] lg:pt-[140px] animate-pageAnimation opacity-0">
       <div className="container mx-auto h-full">
         <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="text-center lg:text-left">
-            <h1 className="h1 pt-36 pb-12 lg:text-[]">
-              Photographer <br /> & film maker
+          <div
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className="flex flex-col text-center lg:text-left justify-center"
+          >
+            <h1 className="h1 pb-2">
+              Photographer <br /> & Film Maker
             </h1>
-            <p className="font-primary text-[26px] lg:text-[32px] mb-4 lg:mb-12">
-              Los Angeles, USA
+            <p className="text-[18px] lg:text-[22px] mt-4 mb-8 lg:mt-5 lg:mb-10 ">
+              I would love to get suggestions from you.
             </p>
-            <Link className="btn inline-block" to={"/contact"}>
-              hire me
+
+            <Link
+              className="btn inline-block self-start mx-auto lg:mx-0"
+              to={"/contact"}
+            >
+              Hire Me
             </Link>
           </div>
-          <div>
-            <div className="h-full">
-              <img className="h-full object-cover" src={WomanImg} alt="" />
-            </div>
+          <div className="flex items-end justify-center ">
+            <img
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="lg:max-h-[760px] object-cover h-full"
+              src={WomanImg}
+              alt=""
+            />
           </div>
         </div>
       </div>
